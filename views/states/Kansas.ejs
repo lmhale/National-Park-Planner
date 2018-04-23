@@ -1,10 +1,28 @@
-<h1> Parks in Kansas</h1>
- <form action="/test" method="POST">
- <select name="parkCode">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-eqiv='X-UA-Compatible' content="ie=edge">
+  <title> National Park CRUD App </title>
+  <meta name="description" content="DESCRIPTION">
+  <link rel="stylesheet" text="text/css" href="/css/stateStyle.css">
+  </head>
+
+<body>
+<h1> Parks in Kansas </h1>
+
+<div class='container'>
+  <img src="/images/kansasFlag.jpg">
+<form action="/test" method="POST">
+ <select class='drop-down'name="parkCode">
     <% data.forEach((data) => { %>
-      <option value="<%=data.parkCode%>"><%=data.fullName%></option>
+      <option class='option' value="<%=data.parkCode%>"><%=data.fullName%></option>
     <% }) %>
 
 </select>
+<br>
 <input type="submit" value="Submit">
 </form>
+</div>
+</body>
+
+</html>

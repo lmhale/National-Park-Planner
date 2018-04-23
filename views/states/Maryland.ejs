@@ -1,11 +1,28 @@
-<h1> Parks in Maryland</h1>
- <form action="/test" method="POST">
- <select name="parkCode">
-    <% data.forEach((data) => { %>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-eqiv='X-UA-Compatible' content="ie=edge">
+  <title> National Park CRUD App </title>
+  <meta name="description" content="DESCRIPTION">
+  <link rel="stylesheet" text="text/css" href="/css/stateStyle.css">
+  </head>
 
-      <option value="<%=data.parkCode%>"><%=data.fullName%></option>
+<body>
+<h1> Parks in Maryland </h1>
+
+<div class='container'>
+  <img src="/images/marylandFlag.jpg">
+<form action="/test" method="POST">
+ <select class='drop-down'name="parkCode">
+    <% data.forEach((data) => { %>
+      <option class='option' value="<%=data.parkCode%>"><%=data.fullName%></option>
     <% }) %>
 
 </select>
+<br>
 <input type="submit" value="Submit">
 </form>
+</div>
+</body>
+
+</html>

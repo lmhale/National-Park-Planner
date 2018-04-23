@@ -160,11 +160,12 @@ parksRouter.route('/states/Wyoming')
 
 parksRouter.route('/test')
 .post(mainController.onePark, views.ShowOnePark)
+.get(mainController.showNotes, views.ShowOnePark)
+.post(mainController.Create, views.ShowOnePark)
 
-
-parksRouter.route('/new')
-.get(mainController.showNotes, views.sendNotes)
-.post(mainController.Create, views.sendCreateNote)
+// parksRouter.route('/test')
+// .get(mainController.showNotes, views.sendNotes)
+// .post(mainController.Create, views.sendCreateNote)
 // parksRouter.route('states/state')
 // .post(mainController.oneState,views.ShowOneState)
 

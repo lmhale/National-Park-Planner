@@ -13,7 +13,7 @@ sendNotes(req, res) {
 
  sendCreateNote(req, res) {
 console.log('is it created')
-   res.render('test', {
+   res.redirect('new', {
 
     data:res.locals.newNote
 });
@@ -31,7 +31,12 @@ showDC(req, res) {
 
 ShowOnePark(req,res) {
    res.render('test', {
-    data:res.locals.one[0]
+    data:res.locals.one[0],
+    // note:[{name:'mynote',comment:'mycomment'}]
+   note:res.locals.newNote,
+   notes:res.locals.notes
+    // notes:res.locals.notes,
+    // note:res.locals.newNote
 
    });
 

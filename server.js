@@ -31,7 +31,11 @@ res.render('home')
 
 })
 
+app.get('/new',(req,res) => {
 
+res.render('new')
+
+})
 
 
 

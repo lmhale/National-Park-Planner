@@ -1,9 +1,15 @@
+body, html {
+  /*take up all available height*/
+  height: 100%
+}
+
+
 .hero-container {
   height: 70vh;
   width: 100%;
   overflow: hidden;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 0x;
 }
 
 .hero {
@@ -34,6 +40,18 @@ h1 {
   opacity: .85
 
 }
+.description {
+  padding-bottom: 3em;
+  background: #13060d;
+  opacity: .75;
+}
+.description p {
+  width: 800px;
+  margin: 0 auto;
+  padding: 3em 3em 0;
+  color: #fff;
+  font : normal 300 20px/1.8 'Open Sans', sans-serif;
+}
 
 body {
   background-color:#F5F5F5;
@@ -43,3 +61,14 @@ body {
 .map {
   text-align: center;
 }
+
+footer {
+  background: #13060d;
+  padding: 10px;
+  margin-top:20px;
+  opacity: .8;
+  color:#F5F5F5;
+  font-side:10px;
+
+}
+
