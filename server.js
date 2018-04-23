@@ -29,9 +29,9 @@ app.get('/', (req,res) => {
 
 res.render('home')
 
-})
+});
 
-app.get('/new',(req,res) => {
+app.get('/new', (req,res) => {
 
 res.render('new')
 

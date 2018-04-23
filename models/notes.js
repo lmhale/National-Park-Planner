@@ -2,13 +2,13 @@ const db = require('../config/connection');
 
 module.exports = {
 
-getAllNotes(){
+getAllFavorites(){
  const queryPromise = db.any(`
     SELECT * FROM notes`);
   return queryPromise;
 },
 
- createNote(note) {
+ createFavorite(note) {
   const query= db.one(`
     INSERT INTO notes
     (name,comment)

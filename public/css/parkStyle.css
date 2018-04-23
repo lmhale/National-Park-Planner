@@ -1,0 +1,38 @@
+ body {
+    background-image: linear-gradient(to right top, #4bdcee, #00b7f1, #008ff2, #0061e4, #2d1fbb);
+    font-family: Arial;
+}
+
+#hOne {
+text-align: center;
+ margin:34px;
+ color:white;
+}
+
+h1 {
+
+
+}
+
+h2 {
+ font-size:30px;
+ color:#9dd1e1;
+}
+.flexContainer {
+    display: flex;
+    font-size:28px;
+
+}
+.flexSpaceAround {
+    justify-content: space-around;
+}
+
+.col {
+    width: 40%;
+    border: 1px solid #777777;
+    border-radius: 8px;
+    background: white;
+    padding: 20px;
+    line-height:1.5;
+    color:#7c795d;
+}

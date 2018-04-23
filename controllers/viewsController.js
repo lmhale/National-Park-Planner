@@ -1,21 +1,21 @@
 
 module.exports = {
 
-sendNotes(req, res) {
+sendFavorites(req, res) {
   console.log('I send successful responses');
-  res.render('new', {
-    data:res.locals.notes
+  res.render('favoritesList', {
+    data:res.locals.favorites
   })
 
 },
 
 
 
- sendCreateNote(req, res) {
+ sendOneFavorite(req, res) {
 console.log('is it created')
-   res.redirect('new', {
+   res.render('favoritesList', {
 
-    data:res.locals.newNote
+    data:res.locals.favorite
 });
 
 },

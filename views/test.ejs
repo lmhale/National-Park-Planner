@@ -1,20 +1,32 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-eqiv='X-UA-Compatible' content="ie=edge">
+  <title> National Park CRUD App </title>
+  <meta name="description" content="DESCRIPTION">
+  <link rel="stylesheet" text="text/css" href="/css/parkStyle.css">
+  </head>
 
+
+
+
+
+<div id=hOne>
 <h1><%=data.fullName %><h1>
-<p><%=data.description %></p>
-<p><%=data.weatherInfo %></p>
-
-
-
-
-  <a href="/new">Add a note</a>
-
-<div class="add">
-
-<form action="/test" method="POST">
-  <input type="text" name="name" placeholder="title" /><br>
-  <input type="text" name="comment" placeholder="notes" /><br>
-  <input type="submit" value="Add Note" />
-</form>
 </div>
+<div class="flexContainer flexSpaceAround">
+
+<div class="col">
+<h2> Park Description</h2>
+<p><%=data.description %></p>
+</div>
+<div class="col">
+<h2>Weather Information</h2>
+<p><%=data.weatherInfo %></p>
+</div>
+</div>
+
+
+
 
 

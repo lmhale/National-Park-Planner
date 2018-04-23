@@ -65,10 +65,10 @@ const notesDB = require('../models/notes');
 
 
 module.exports = {
-showNotes(req, res, next) {
-  notesDB.getAllNotes()
-    .then(data => {
-      res.locals.notes = data;
+showFavorites(req, res, next) {
+  notesDB.getAllFavorites()
+    .then(favorites => {
+      res.locals.favorites = favorites;
       next();
     })
     .catch(err=> {
@@ -78,9 +78,9 @@ showNotes(req, res, next) {
 
 
 Create(req, res, next) {
-notesDB.createNote(req.body)
-    .then(data => {
-      res.locals.newNote = data;
+notesDB.createFavorite(req.body)
+    .then(favorite => {
+      res.locals.favorite = favorite;
       next();
     })
     .catch(err=> {
