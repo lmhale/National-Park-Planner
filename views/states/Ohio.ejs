@@ -1,0 +1,10 @@
+<h1> Parks in Ohio</h1>
+ <form action="/test" method="POST">
+ <select name="parkCode">
+    <% data.forEach((data) => { %>
+      <option value="<%=data.parkCode%>"><%=data.fullName%></option>
+    <% }) %>
+
+</select>
+<input type="submit" value="Submit">
+</form>

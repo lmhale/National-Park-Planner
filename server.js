@@ -1,9 +1,10 @@
 const express = require('express');
 const app = express();
-
+const fetch = require("node-fetch");
 const bodyParser = require('body-parser');
 const pgp = require('pg-promise')();
 const path = require('path')
+const methodOverride = require('method-override');
 
 const parkRoutes = require('./routes/park-routes');
 
@@ -11,15 +12,26 @@ const parkRoutes = require('./routes/park-routes');
 
 
 const PORT=process.env.PORT || 3000;
-
+app.use(express.static(path.join(__dirname, 'public')));
 app.set('views', path.join(__dirname,'views'));
 app.set('view engine','ejs');
 
+app.use(bodyParser.urlencoded({
+ extended: false,
+}));
 app.use(bodyParser.json());
 
 
 app.use('/',parkRoutes);
 // const url = "https://developer.nps.gov/api/v1/parks?parkCode=acad&api_key=LTbejI0NltNTgkxg4CRNGkRSLpLc6E1Jch2ZLyGS"
+
+app.get('/', (req,res) => {
+
+res.render('home')
+
+})
+
+
 
 
 

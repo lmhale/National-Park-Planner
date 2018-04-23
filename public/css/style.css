@@ -1,0 +1,45 @@
+.hero-container {
+  height: 70vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.hero {
+  background: url('https://i.imgur.com/lWjYcJu.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  opacity:.95;
+
+}
+
+
+
+.hero-stuff {
+  position: absolute;
+  top: 150px;
+  left: 450px;
+}
+
+
+
+h1 {
+  font-size: 55px;
+  font-weight: 700;
+  font-family: Arial;
+  color: #F5F5F5;
+  opacity: .85
+
+}
+
+body {
+  background-color:#F5F5F5;
+
+}
+
+.map {
+  text-align: center;
+}

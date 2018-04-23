@@ -1,5 +1,36 @@
-<ul>
-    <% data.forEach(function(data) { %>
-        <li><%= data.fullName %>
-    <% }); %>
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-eqiv='X-UA-Compatible' content="ie=edge">
+  <title> National Park CRUD App </title>
+  <meta name="description" content="DESCRIPTION">
+  <link rel="stylesheet" text="text/css" href="/css/style.css">
+  </head>
+
+<body>
+
+<div class="hero-container">
+  <div class="hero"></div>
+  <div class="hero-stuff">
+      <h1>National Park Planner</h1>
+
+  </div>
+</div>
+<div class='description'>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue sodales risus, rutrum congue dui volutpat non. Ut nec pharetra purus. Maecenas in elementum odio. Nam eget diam turpis. Curabitur in eros vitae dui rhoncus lacinia non vel enim. Aliquam ut tincidunt nulla. Nulla id neque tristique, varius ante a, lobortis diam. Vestibulum commodo ullamcorper nulla. Vivamus non efficitur purus. Phasellus ut ullamcorper diam, quis eleifend urna. Fusce tincidunt erat et faucibus fermentum. Maecenas mauris mi, dignissim quis quam fermentum, facilisis dictum tortor.</p>
+
+</div>
+
+
+<div class="map">
+<iframe src="https://createaclickablemap.com/map.php?&id=70483&maplocation=false&online=true" width="1082" height="631" style="border: none;"></iframe>
+<script>if (window.addEventListener){ window.addEventListener("message", function(event) { if(event.data.length >= 22) { if( event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } else if (window.attachEvent){ window.attachEvent("message", function(event) { if( event.data.length >= 22) { if ( event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } </script>
+</div>
+
+
+
+
+</body>
+
+</html>
