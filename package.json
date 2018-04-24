@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "National Park Planner is an application that provides a detailed list of all of the national parks in the United States. The user is able to access information about each national including images,top attractions, weather patterns, and more. The user is able to customize their experience by adding personal notes.",
   "main": "server.js",
+  "engines": {
+    "node": "9.11.1",
+    "npm": "5.6.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",

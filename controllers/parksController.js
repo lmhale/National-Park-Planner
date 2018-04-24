@@ -1,6 +1,6 @@
-
 const config = require('../config/dbConfig');
-let myKey = config.My_KEY;
+require('dotenv').config();
+let myKey = process.env.myKey;
 
 
 const dcUrl = `https://developer.nps.gov/api/v1/parks/?stateCode=DC&api_key=${myKey}`
@@ -11,7 +11,7 @@ const arUrl=`https://developer.nps.gov/api/v1/parks/?stateCode=AR&api_key=${myKe
 const azUrl=`https://developer.nps.gov/api/v1/parks/?stateCode=Az&api_key=${myKey}`
 const coUrl=`https://developer.nps.gov/api/v1/parks/?stateCode=CO&api_key=${myKey}`
 const ctUrl=`https://developer.nps.gov/api/v1/parks/?stateCode=CT&api_key=${myKey}`
-const deUrl=`https://developer.nps.gov/api/v1/parks/?stateCode=DE&api_key={myKey}`
+const deUrl=`https://developer.nps.gov/api/v1/parks/?stateCode=DE&api_key=${myKey}`
 const flUrl=`https://developer.nps.gov/api/v1/parks/?stateCode=fl&api_key=${myKey}`
 const gaUrl=`https://developer.nps.gov/api/v1/parks/?stateCode=ga&api_key=${myKey}`
 const hiUrl=`https://developer.nps.gov/api/v1/parks/?stateCode=hi&api_key=${myKey}`
