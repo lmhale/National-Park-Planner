@@ -121,7 +121,7 @@ DC(req,res,next) {
   onePark (req,res,next) {
    console.log('inside onePark: ', req.body)
 
-   fetch(`https://developer.nps.gov/api/v1/parks/?parkCode=${req.body.parkCode}&api_key=LTbejI0NltNTgkxg4CRNGkRSLpLc6E1Jch2ZLyGS`)
+   fetch(`https://developer.nps.gov/api/v1/parks/?parkCode=${req.body.parkCode}&api_key=${myKey}`)
     .then((one) => {
      return one.json()
     })
